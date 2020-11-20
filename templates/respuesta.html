@@ -1,0 +1,14 @@
+<body>
+{% extends "base.html" %}
+{% block contenido %}
+<div style="text-align: center;">
+{{pregunta.text}}
+<br>
+{{respuesta.text}}
+<br>
+{{resultado}}
+<br>
+<a href="{{ url_for('mostrarcategorias') }}">Volver a categorias</a>
+</div>
+{% endblock %}
+</body>
